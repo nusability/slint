@@ -1,0 +1,26 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Slint",
+      "identifier": "slint.my-command-identifier",
+      "script": "./slint.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown",
+          "onDocumentChanged": "onDocumentChanged",
+          "SelectionChanged.finish": "SelectionChanged"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Slint",
+    "items": [
+      "slint.my-command-identifier"
+    ],
+    "isRoot": true
+  }
+}

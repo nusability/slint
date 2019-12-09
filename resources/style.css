@@ -1,0 +1,83 @@
+/* some default styles to make the view more native like */
+
+html {
+  box-sizing: border-box;
+  background: transparent;
+
+  /* Force the default cursor, even on text */
+  cursor: default;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: small;
+}
+
+body {
+  padding-top: 30px;
+}
+
+.light {
+  background: rgb(242, 242, 242);
+  color: rgb(37, 37, 37);
+}
+
+.dark {
+  background: rgb(46, 47, 48);
+  color: rgb(239, 230, 230);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  position: relative;
+
+  /* Prevent the content from being selectionable */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+.dark a {
+  color: rgb(239, 230, 230);
+}
+
+.light a {
+  color: rgb(37, 37, 37);
+}
+
+#issues ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#toolbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 36px;
+  margin-left: -10px;
+  padding-left: 90px;
+  padding-top: 8px;
+  z-index: 1;
+}
+
+.dark #toolbar {
+  background: rgb(46, 47, 48);
+}
+
+.light #toolbar {
+  background: rgb(242, 242, 242);
+}
+
+select[name="ignore-rule"] {
+  border: none;
+  background: none;
+  width: 40px;
+  outline: none;
+  -webkit-appearance: unset;
+  text-decoration: underline;
+  font-size: unset;
+  color: unset;
+}
