@@ -3,21 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <title>slint</title>
+  <title>slint Settings</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body data-app-region="drag">
   <div id="toolbar">
-    <button id="button">Lint Document</button>
-    <span id="status"></span>
-    <a href="#" id="resetIgnore">Reset Ignored Layers</a>
+    <div class="left">
+
+    </div>
+    <div class="right"></div>
   </div>
 
-  <div id="issues">Here be issues</div>
+  <div id="body">
+    <ul id="groups">
+    </ul>
+
+    <ul id="rules">
+    </ul>
+  </div>
 
   <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
-  <script src="../resources_webview.js"></script>
+  <script src="../resources_settings.js"></script>
 </body>
 
 </html>

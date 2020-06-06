@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>slint</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body data-app-region="drag">
+  <div id="toolbar">
+    <div class="left">
+      <button id="button">Lint Document</button>
+      <span id="status"></span>
+      <a href="#" id="resetIgnore">Reset Ignored Layers</a>
+    </div>
+    <div class="right"><button id="settings">⚙️</button></div>
+  </div>
+
+  <div id="issues">Here be issues</div>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_issues.js"></script>
+</body>
+
+</html>

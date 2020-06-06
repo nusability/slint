@@ -29,16 +29,4 @@ module.exports = function (config, entry) {
     },
     ]
   })
-  config.module.rules.push(
-    {
-      test: /\.m?js$/,
-      exclude: /(node_modules|bower_components)/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          plugins: ["@babel/plugin-proposal-optional-chaining"]
-        }
-      }
-    })
-
 }

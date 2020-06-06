@@ -1,4 +1,21 @@
-/* some default styles to make the view more native like */
+:root {
+  --tiny: 4px;
+  --small: 8px;
+  --medium: 16px;
+  --large: 24px;
+  --huge: 48px;
+  --gigantic: 72px;
+
+  --grey-00: #000000;
+  --grey-20: #2A2A2A;
+  --grey-30: #2E2F30;
+  --grey-35: #383838;
+  --grey-40: #454647;
+  --grey-45: #515151;
+  --grey-50: #686868;
+  --grey-70: #ABACAC;
+  --grey-80: #DFDFDF;
+}
 
 html {
   box-sizing: border-box;
@@ -47,12 +64,16 @@ input, textarea {
   color: rgb(37, 37, 37);
 }
 
-#issues ul {
+#issues ul,
+ul#groups,
+ul#rules {
   list-style-type: none;
   padding-left: 0;
 }
 
 #toolbar {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -63,6 +84,15 @@ input, textarea {
   z-index: 1;
 }
 
+#toolbar .right {
+  width: 30px;
+}
+
+button#settings {
+  background: none;
+  border: none;
+}
+
 .dark #toolbar {
   background: rgb(46, 47, 48);
 }
@@ -71,13 +101,62 @@ input, textarea {
   background: rgb(242, 242, 242);
 }
 
-select[name="ignore-rule"] {
+select {
   border: none;
   background: none;
-  width: 40px;
   outline: none;
   -webkit-appearance: unset;
   text-decoration: underline;
   font-size: unset;
   color: unset;
+}
+
+select[name="ignore-rule"] {
+  width: 40px;
+}
+
+select[name="fix-issue"] {
+  width: 50px;
+}
+
+#body {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: var(--small);
+  overflow: hidden;
+}
+
+ul#groups {
+  background: var(--grey-20);
+  border: 1px solid var(--grey-45);
+}
+
+ul#groups li {
+  background: transparent;
+  padding: var(--medium) var(--small);
+  font-weight: 700;
+}
+
+ul#groups li.active {
+  background: var(--grey-50);
+}
+
+ul#rules {
+  padding: var(--medium);
+  background: var(--grey-35);
+  border: 1px solid var(--grey-45);
+  border-radius: 4px;
+  overflow-y: scroll;
+}
+
+ul#rules li {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  margin-bottom: var(--small);
+}
+
+ul#rules li input {
+  margin-inline-end: var(--small);
 }

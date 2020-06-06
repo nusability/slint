@@ -20,8 +20,8 @@
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "@skpm/builder": "^0.7.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@skpm/builder": "^0.7.7",
     "@skpm/extract-loader": "^2.0.2",
     "css-loader": "^3.2.0",
     "html-loader": "^0.5.5"

@@ -22,5 +22,6 @@
       "slint.my-command-identifier"
     ],
     "isRoot": true
-  }
+  },
+  "icon": "icon.png"
 }
