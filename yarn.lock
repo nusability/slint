@@ -157,6 +157,11 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0.tgz#bbb3fbee98661c569034237cc03967ba99b4f250"
   integrity sha512-CYAOUCARwExnEixLdB6sDm2dIJ/YgEAKDM1MOeMeZu9Ld/bDgVo8aiWrXwcY7OBh+1Ea2uUcVRcxKk0GJvW7QA==
 
+"@babel/helper-plugin-utils@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.10.1.tgz#ec5a5cf0eec925b66c60580328b122c01230a127"
+  integrity sha512-fvoGeXt0bJc7VMWZGCAEBEMo/HAjW2mP8apF5eXK0wSqwLAVHAISCWRoLMBMUs2kqeaG77jltVqu4Hn8Egl3nA==
+
 "@babel/helper-plugin-utils@^7.8.0", "@babel/helper-plugin-utils@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.8.3.tgz#9ea293be19babc0f52ff8ca88b34c3611b208670"
@@ -255,6 +260,14 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
 
+"@babel/plugin-proposal-export-namespace-from@^7.8.3":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-export-namespace-from/-/plugin-proposal-export-namespace-from-7.10.1.tgz#512ee069cd866256600bdf89639cf7e1b51fbfe9"
+  integrity sha512-eR4CoYb6mh5y9LWjnb4CyUatuhtZ8pNLXLDi46GkqtF7WPafFqXycHdvF5qWviozZVGRSAmHzdayc8wUReCdjA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/plugin-syntax-export-namespace-from" "^7.8.3"
+
 "@babel/plugin-proposal-json-strings@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-json-strings/-/plugin-proposal-json-strings-7.2.0.tgz#568ecc446c6148ae6b267f02551130891e29f317"
@@ -308,6 +321,13 @@
   integrity sha512-mVxuJ0YroI/h/tbFTPGZR8cv6ai+STMKNBq0f8hFxsxWjl94qqhsb+wXbpNMDPU3cfR1TIsVFzU3nXyZMqyK4w==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
+
+"@babel/plugin-syntax-export-namespace-from@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-export-namespace-from/-/plugin-syntax-export-namespace-from-7.8.3.tgz#028964a9ba80dbc094c915c487ad7c4e7a66465a"
+  integrity sha512-MXf5laXo6c1IbEbegDmzGPwGNTsHZmEy6QGznu5Sh2UCWvueywb2ee+CCE4zQiZstxU9BMoQO9i6zUFSY0Kj0Q==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
 
 "@babel/plugin-syntax-json-strings@^7.2.0":
   version "7.2.0"
@@ -741,23 +761,24 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@skpm/babel-preset@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@skpm/babel-preset/-/babel-preset-0.2.1.tgz#1e0404e058514d72adebe98163b69b0bb1d737e4"
-  integrity sha512-bIG9JE0rdSuWh5QMyxIXKUPZUXI2BjXxmI1/dxcRNUK2IweZ9vvuuP7IMaplxPYqZgFqSuj1HAmX1uP/CG9YOw==
+"@skpm/babel-preset@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@skpm/babel-preset/-/babel-preset-0.2.2.tgz#9b3a85f0daf75f16234bb214a0d44fe7d2f00d35"
+  integrity sha512-AfP2DlSsYnlXs5Goh+RXurol4wCdR8jHRTnmLyUD1/iJn0pvSFs/flqkCTJIvsrBStVLpxnLkZSm+hae82E/VQ==
   dependencies:
     "@babel/plugin-proposal-async-generator-functions" "^7.0.0"
+    "@babel/plugin-proposal-export-namespace-from" "^7.8.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-"@skpm/builder@^0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@skpm/builder/-/builder-0.7.4.tgz#9bfec0596e18295cf411b9872010ded354a6f69d"
-  integrity sha512-ccYnY4jkzl91HMofQhcP8RHFWpPOCSQ4gd4y2yX6Wb14XJgRsnD4v0VmT1HPIhk24QsVrK8N/Yk6sbogmNzxQQ==
+"@skpm/builder@^0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@skpm/builder/-/builder-0.7.7.tgz#762c11ed065afa4f17a14f9d3fcc26c8da9d2f39"
+  integrity sha512-4TPEwGyYtOHzsgzKZjJ3kfw7HiOevkKVebRNFuOmBbpAHTH8qA5/+BL2sYl0FpPx+Tg5JZHLHdErxD3JvsAJoQ==
   dependencies:
     "@babel/core" "^7.4.3"
-    "@skpm/babel-preset" "0.2.1"
+    "@skpm/babel-preset" "^0.2.2"
     "@skpm/file-loader" "^2.0.1"
     "@skpm/internal-utils" "^0.1.15"
     "@skpm/nib-loader" "^0.1.2"
@@ -768,7 +789,6 @@
     globby "^9.2.0"
     mkdirp "^0.5.1"
     parse-author "2.0.0"
-    run-sketch-plugin "^1.0.0"
     semver "^6.0.0"
     sketch-polyfill-fetch "^0.4.3"
     terser-webpack-plugin "^1.2.3"
@@ -1011,9 +1031,9 @@ abbrev@1:
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
 acorn@^6.2.1:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.3.0.tgz#0087509119ffa4fc0a0041d1e93a417e68cb856e"
-  integrity sha512-/czfa8BwS88b9gWQVhc8eknunSA2DoJpJyTQkhheIf5E48u1N0R4q/YxxsAeqRrmK9TQ/uYfgLDfZo91UlANIA==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 ajv-errors@^1.0.0:
   version "1.0.1"
@@ -1594,11 +1614,6 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
-
-coscript@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/coscript/-/coscript-1.0.0.tgz#1a0ef8d5f8b4a67901b97ae59bd2f51e6cc6b0f1"
-  integrity sha1-Gg741fi0pnkBuXrlm9L1HmzGsPE=
 
 create-ecdh@^4.0.0:
   version "4.0.3"
@@ -3439,13 +3454,6 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
   dependencies:
     aproba "^1.1.1"
-
-run-sketch-plugin@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/run-sketch-plugin/-/run-sketch-plugin-1.0.3.tgz#2eb6112d2b0870adfb03fce8310ade76d7fd8f52"
-  integrity sha1-LrYRLSsIcK37A/zoMQredtf9j1I=
-  dependencies:
-    coscript "^1.0.0"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.2.0:
   version "5.2.0"
