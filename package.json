@@ -2,6 +2,7 @@
   "name": "slint",
   "version": "0.1.2",
   "repository": "https://github.com/nusability/slint",
+  "description": "A linter for Sketch files",
   "engines": {
     "sketch": ">=3.0"
   },
