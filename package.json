@@ -9,7 +9,6 @@
   "skpm": {
     "name": "Slint",
     "manifest": "src/manifest.json",
-    "appcast": "https://api.sketchpacks.com/v1/plugins/in.nann.slint/appcast",
     "main": "slint.sketchplugin",
     "assets": [
       "assets/**/*"
