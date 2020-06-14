@@ -1,6 +1,7 @@
 {
   "name": "slint",
   "version": "0.1.2",
+  "repository": "nusability/slint",
   "engines": {
     "sketch": ">=3.0"
   },
