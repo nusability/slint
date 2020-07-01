@@ -1,6 +1,6 @@
 {
   "name": "slint",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": "https://github.com/nusability/slint",
   "description": "A linter for Sketch files",
   "engines": {
