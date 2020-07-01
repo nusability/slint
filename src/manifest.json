@@ -4,7 +4,7 @@
   "commands": [
     {
       "name": "Slint",
-      "identifier": "in.nann.slint",
+      "identifier": "in.nann.slint/issues",
       "script": "./slint.js",
       "appcast": "https://api.sketchpacks.com/v1/plugins/in.nann.slint/appcast",
       "handlers": {
@@ -20,7 +20,7 @@
   "menu": {
     "title": "Slint",
     "items": [
-      "slint.lint"
+      "in.nann.slint/issues"
     ],
     "isRoot": true
   },
