@@ -161,7 +161,7 @@ const rules = [
   {
     'name': `Layer style is out of sync with shared layer style`,
     'group': 'Styles',
-    'explanation': `A layer's style should be managed centrally with a shared layer style and not deviate from it.'`,
+    'explanation': `A layer's style should be managed centrally with a shared layer style and not deviate from it.`,
     'test': node => {
       try {
         if (node.sharedStyleId) {
