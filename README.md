@@ -16,7 +16,7 @@ Slint is a linter for Sketch files. It analyzes your Sketch files and points out
 Read [the in-depth explanation](https://www.thoughtworks.com/insights/blog/pro-sketch-techniques-shared-libraries) on some of these rules.
 
 Nr. | Name | Explanation
-- | ---- | -----------
+--- | ---- | -----------
 1 | Page has a default name | All pages should be named semantically.
 2 | Artboard has a default name | All artboards should be named semantically.
 3 | Rectangle has a default name | All layers should be named semantically.
